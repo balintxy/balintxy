@@ -42,22 +42,22 @@ body {
 }
 
 .title {
-    width: 65%;
+    width: 100%;
     float: left;
     font-size: x-large;
     color: #FFF;
     letter-spacing: 0.1cm;
-    text-align: left;
+    text-align: center;
     text-decoration: underline;
 }
 
 .title2 {
-    width: 60%;
+    width: 100%;
     float: right;
     font-size: x-large;
     color: #FFF;
     letter-spacing: 0.1cm;
-    text-align: right;
+    text-align: center;
     text-decoration: underline;
 }
 
@@ -67,15 +67,16 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-column-gap: 0px;
     grid-row-gap: 20px;
     align-items: center;
     justify-items: center;
-}
-
-.grid-cnt {
+    max-width: 1200px;
+    width: 100%;
+   }
+  .grid-cnt {
     --cols: repeat(2, 1fr);
     --rows: repeat(1, 1fr);
     --spacing: 20px;
@@ -86,7 +87,9 @@ body {
     grid-row-gap: var(--spacing);
     justify-items: center;
     align-items: center;
-}
+    grid-area: 2 / 1 / 2 / 3;
+    width: 100%;
+  }
 
 .grid-cnt.col-1 {
     --cols: repeat(1, 1fr);
@@ -126,6 +129,7 @@ body {
     border-radius: 10px;
     padding: 20px;
     white-space: nowrap;
+    width: 100%;
 }
 
 .grid-item a {
