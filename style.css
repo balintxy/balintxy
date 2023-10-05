@@ -1,93 +1,141 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: border-box;
-  }
-  
-  html,
-  body {
-      font-family: 'Poppins', sans-serif;
-      font-weight: normal;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      text-rendering: optimizeLegibility;
-  }
-  
-  h1,h2,h3,h4,h5,h6,ul,ol,li,body,div,section,a,p {
-      margin: 0;
-      list-style: none;
-      text-decoration: none;
-      padding: 0;
-  }
-  
-  body {
-      background-color: rgb(153, 204, 255);
-      background: linear-gradient(to left, rgb(13, 59, 128) 25%, rgba(51, 153, 255, 1) 100%);
-      height: 100vh;
-      width: 100vw;
-      position: relative;
-  }
-  
-  .title {
-      width: 100%;
-      float: left;
-      font-size: x-large;
-      color: #FFF;
-      letter-spacing: 0.1cm;
-      text-align: center;
-  }
-  
-  .main-content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(2, auto);
-      grid-column-gap: 0px;
-      grid-row-gap: 20px;
-      align-items: center;
-      justify-items: center;
-  }
-  
-  .grid-cnt {
-      --cols: repeat(2, 1fr);
-      --rows: repeat(1, 1fr);
-      --spacing: 20px;
-      display: grid;
-      grid-template-columns: var(--cols);
-      grid-template-rows: var(--rows);
-      grid-column-gap: var(--spacing);
-      grid-row-gap: var(--spacing);
-      justify-items: center;
-      align-items: center;
-  }
-  
-  .grid-cnt.col-1 { --cols: repeat(1, 1fr); }
-  .grid-cnt.col-2 { --cols: repeat(2, 1fr); }
-  .grid-cnt.col-3 { --cols: repeat(3, 1fr); }
-  .grid-cnt.col-4 { --cols: repeat(4, 1fr); }
-  
-  .grid-cnt.row-1 { --rows: repeat(1, 1fr); }
-  .grid-cnt.row-2 { --rows: repeat(2, 1fr); }
-  .grid-cnt.row-3 { --rows: repeat(3, 1fr); }
-  .grid-cnt.row-4 { --rows: repeat(4, 1fr); }
-  
-  .grid-item {
-      background-color: #3366cc;
-      border: 5px solid #172b52;
-      border-radius: 10px;
-      padding: 20px;
-      white-space: nowrap;
-  }
-  
-  .grid-item a {
-      letter-spacing: 2px;
-      color: #FFF;
-      line-height: 1cm;
-      text-decoration: none;
-      transition: color 0.3s ease-in-out;
-  }
-  
-  .grid-item a:hover {
-      color: lightblue;
-  }
+}
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+body,
+div,
+section,
+a,
+p {
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(153, 204, 255);
+    background: linear-gradient(to left, rgb(13, 59, 128) 25%, rgba(51, 153, 255, 1) 100%);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.title {
+    width: 65%;
+    float: left;
+    font-size: x-large;
+    color: #FFF;
+    letter-spacing: 0.1cm;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.title2 {
+    width: 60%;
+    float: right;
+    font-size: x-large;
+    color: #FFF;
+    letter-spacing: 0.1cm;
+    text-align: right;
+    text-decoration: underline;
+}
+
+.main-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+.grid-cnt {
+    --cols: repeat(2, 1fr);
+    --rows: repeat(1, 1fr);
+    --spacing: 20px;
+    display: grid;
+    grid-template-columns: var(--cols);
+    grid-template-rows: var(--rows);
+    grid-column-gap: var(--spacing);
+    grid-row-gap: var(--spacing);
+    justify-items: center;
+    align-items: center;
+}
+
+.grid-cnt.col-1 {
+    --cols: repeat(1, 1fr);
+}
+
+.grid-cnt.col-2 {
+    --cols: repeat(2, 1fr);
+}
+
+.grid-cnt.col-3 {
+    --cols: repeat(3, 1fr);
+}
+
+.grid-cnt.col-4 {
+    --cols: repeat(4, 1fr);
+}
+
+.grid-cnt.row-1 {
+    --rows: repeat(1, 1fr);
+}
+
+.grid-cnt.row-2 {
+    --rows: repeat(2, 1fr);
+}
+
+.grid-cnt.row-3 {
+    --rows: repeat(3, 1fr);
+}
+
+.grid-cnt.row-4 {
+    --rows: repeat(4, 1fr);
+}
+
+.grid-item {
+    background-color: #3366cc;
+    border: 5px solid #172b52;
+    border-radius: 10px;
+    padding: 20px;
+    white-space: nowrap;
+}
+
+.grid-item a {
+    letter-spacing: 2px;
+    color: #FFF;
+    line-height: 1cm;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.grid-item a:hover {
+    color: lightblue;
+}
