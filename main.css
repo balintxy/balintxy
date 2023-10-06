@@ -120,6 +120,8 @@ body {
     padding: 20px;
     white-space: nowrap;
     width: 100%;
+    text-align: center;
+    font-size: 25px;
     
 }
 
@@ -129,11 +131,15 @@ body {
     line-height: 1cm;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
-    
+
 }
 
 .grid-item a:hover {
     color: lightblue;
+}
+
+a {
+    color: beige;
 }
 
 .name {
