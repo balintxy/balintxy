@@ -147,6 +147,24 @@ body {
     color: lightblue;
 }
 
+.name {
+    font-size: 1.25rem;
+    line-height: 1cm;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: beige;
+    position: absolute;
+}
+
+.primary {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.text-outline {
+    font-family: 'Londrina Outline', cursive;
+    letter-spacing: 5px;
+}
+
 @media (max-width: 400px) {
     .main-content {
         width: 50%;
