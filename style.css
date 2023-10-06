@@ -131,6 +131,7 @@ body {
     padding: 20px;
     white-space: nowrap;
     width: 100%;
+    
 }
 
 .grid-item a {
@@ -139,20 +140,24 @@ body {
     line-height: 1cm;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
+    
 }
 
 .grid-item a:hover {
     color: lightblue;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
     .main-content {
-        grid-area: 2 / 1 / 2 / 3;
         width: 50%;
         position: absolute;
         top: 60%;
         display: grid;
         left: 100px;
+    }
+
+    .grid-cnt {
+        grid-area: 2 / 2 / 2 / 1;
     }
 
     .grid-cnt.col-2 {
@@ -163,11 +168,12 @@ body {
         font-size: 1rem;
         width: 95%;
         position: relative;
-        left: -8%;
+        left: -3%;
+        bottom: 3%;
     }
 
     .grid-item a {
-        font-size: 10px;
+        font-size: 8px;
         line-height: 0px;
     }
 
