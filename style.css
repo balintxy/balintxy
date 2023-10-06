@@ -145,7 +145,7 @@ body {
     color: lightblue;
 }
 
-@media (min-width: 300px) {
+@media (max-width: 500px) {
     .main-content {
         grid-area: 2 / 1 / 2 / 3;
         width: 50%;
@@ -179,19 +179,3 @@ body {
         font-size: 1.25rem;
     }
 }
-
-
-@media (min-width: 500px) {
-    .main-content {
-        grid-area: 2 / 1 / 2 / 3;
-        width: 50%;
-        position: absolute;
-        top: 85%;
-        display: grid;
-        left: 120px;
-    }
-
-    .grid-cnt.col-2 {
-        --cols: repeat(1, 1fr);
-    }
-} 
