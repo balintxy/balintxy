@@ -170,8 +170,8 @@ a {
 
     .main-content {
         position: absolute;
-        top: 47%;
-        left: 47%;
+        top: 50%;
+        left: 55%;
         transform: translate(-115%, -75%);
         display: grid;
         grid-template-columns: repeat(2, 1fr);
