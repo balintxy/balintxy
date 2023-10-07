@@ -168,6 +168,11 @@ a {
         margin: 10px;
     }
 
+    .text-outline {
+        font-size: 2rem;
+        line-height: 0.8cm;
+    }
+
     .main-content {
         position: absolute;
         top: 50%;
