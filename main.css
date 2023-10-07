@@ -160,7 +160,7 @@ a {
     letter-spacing: 5px;
 }
 
-@media (min-width: 375px) {
+@media (max-width: 768px) {
     .name {
         position: absolute;
         font-size: 0.8rem;
@@ -170,8 +170,8 @@ a {
 
     .main-content {
         position: absolute;
-        top: 50%;
-        left: 50%;
+        top: 47%;
+        left: 47%;
         transform: translate(-115%, -75%);
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -197,21 +197,6 @@ a {
 
     body {
         background-repeat: no-repeat;
-        background-size: 375px;
-    }
-
-    .grid-cnt {
-        --cols: repeat(2, 1fr);
-        --rows: repeat(1, 1fr);
-        --spacing: 20px;
-        display: grid;
-        grid-template-columns: var(--cols);
-        grid-template-rows: var(--rows);
-        grid-column-gap: var(--spacing);
-        grid-row-gap: var(--spacing);
-        justify-items: center;
-        align-items: center;
-        grid-area: 2 / 1 / 2 / 3;
-        width: 100%;
+        background-size: 768px;
     }
 }
