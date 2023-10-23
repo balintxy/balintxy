@@ -1,0 +1,50 @@
+* {
+    background-color: #282A65;
+    color: #FFFFFF;
+    font-family: 'Pixelify Sans', sans-serif;
+    margin-top: 75px;
+}
+
+h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+    padding-left: 430px;
+}
+
+.container-text {
+    position: relative;
+    left: 75px;
+    top: 10px;
+    max-width: 63%;
+    margin: auto;
+    text-align: left;
+}
+
+.line {
+    width: 1045px;
+    position: relative;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 1220px) {
+    .container {
+       font-size: 20px;
+       position: absolute;
+       left: -420px;
+       top: -120px;
+    }
+    .line {
+        position: absolute;
+        width: 125%;
+    }
+
+    .container-text {
+        position: absolute;
+        top: 120px;
+        left: 10px;
+        max-width: 90%;
+    }
+
+}
+
