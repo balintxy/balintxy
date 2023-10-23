@@ -30,14 +30,15 @@ h1 {
 
 @media screen and (max-width: 1220px) {
     .container {
-       font-size: 20px;
-       position: absolute;
-       left: -420px;
-       top: -120px;
+        font-size: 20px;
+        position: absolute;
+        left: -420px;
+        top: -120px;
     }
+
     .line {
         position: absolute;
-        width: 125%;
+        width: 55%;
     }
 
     .container-text {
@@ -48,4 +49,3 @@ h1 {
     }
 
 }
-
