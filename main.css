@@ -12,22 +12,23 @@ h1 {
 }
 
 .container-text {
-    position: relative;
-    left: 75px;
-    top: 10px;
+    position: absolute;
+    left: 435px;
+    top: 250px;
     max-width: 63%;
     margin: auto;
     text-align: left;
 }
 
 .line {
-    width: 1045px;
-    position: relative;
+    width: 900px;
+    left: 435px;
+    position: absolute;
     margin: auto;
 }
 
 
-@media screen and (max-width: 1220px) {
+@media (max-width: 1220px) {
     .container {
        font-size: 20px;
        position: absolute;
